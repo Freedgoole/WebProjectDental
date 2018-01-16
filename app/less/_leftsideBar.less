@@ -1,0 +1,132 @@
+@headFont: 'Proxima Nova Rg', sans-serif;
+@headFontSize: '14px';
+
+.left-softBar {
+    width: 212px;
+}
+.menu-list {
+    list-style-type: none;
+    &_item {
+    font-size: 16px;
+    height: 52px;
+    line-height: 48px;
+    border-bottom: 1px solid #e0e2e6;
+    font-size: @headFont;
+    padding-left: 51px;
+        &-link {
+            text-decoration: none;
+            color: #59606b;
+            font-weight: 100;
+            font-family: @headFont;
+        }
+        &-fead {
+           background: url(../img/feed.svg) no-repeat;
+           background-position: -2px 13px;
+        }
+        &-ask {
+            background: url(../img/ask.svg) no-repeat;
+           background-position: -1px 11px;
+        }
+        &-comp {
+            background: url(../img/companies.svg) no-repeat;
+           background-position: 2px 11px;
+        }
+        &-srv {
+            background: url(../img/services.svg) no-repeat;
+            background-position: 3px 10px;
+        }
+    }
+}
+.section-header {
+    display: flex;
+    padding: 17px 0 13px 0;
+    border-top: 1px solid #e0e2e6;
+    justify-content: space-between;
+    &_title {
+        color: #6a7383;
+        font-size: 14px;
+        font-weight: 100;
+        font-family: @headFont;
+    }
+    &_all {
+        color: #1c2534;
+        font-size: 14px;
+        font-family: @headFont;
+
+    }
+}
+.section-list {
+    list-style-type: none;
+    &_item {
+        display: flex;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            overflow: hidden;
+            & img {
+                width: 100%;
+            }
+        }
+        &-text {
+            margin-top: -4px;
+            padding-left: 10px;
+            &_title {
+                font-size: 16px;
+                color: #1c2534;
+                font-family: @headFont;
+                font-weight: 100;
+            }
+            &-descr {
+                font-size: 14px;
+                color: #7c8695;
+            }
+            &-location {
+                font-size: 14px;
+                color: #7c8695;
+            }
+            &-btn {
+                display: block;
+               font-size: 12px;
+                color: #1c2534;
+                font-weight: 400;
+                margin-top: -3px;
+                font-family: @headFont;
+            }
+        }
+    }
+}
+.softBar-footer {
+    border-top: 1px solid #e0e2e6;
+    padding: 11px 0;
+    &_descr {
+        color: #b7bfcd;
+        font-size: 12px;
+        font-family: @headFont;
+    }
+    &_list {
+        margin-top: 6px;
+        font-size: 12px;
+        font-family: @headFont;
+        display: flex;
+        list-style-type: none;
+        &-item {
+            color: #b7bfcd;
+            .softBar-footer_link {
+                color: #b7bfcd;
+                padding-right: 20px;
+            }
+
+        }
+        
+        
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #1c2534;
+    font-family: @headFont;
+}

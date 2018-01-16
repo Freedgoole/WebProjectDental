@@ -1,0 +1,290 @@
+
+@headFont: 'Proxima Nova Rg',sans-serif;
+.support-container  {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+.support-main-header {
+   height: 510px;
+   width: 100%;
+   background: url('../img/image.png') no-repeat;
+   background-size: cover;
+   overflow: hidden;
+}
+.support-main-header_top{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       align-items: center;
+       margin: 30px 0;
+       &-btn {
+           display: block;
+           border: none;
+           color: #ffffff;
+           font-family: 'MyriadProRegular', sans-serif;
+           font-size: 14px;
+           width: 109px;
+           height: 30px;
+           border-radius: 5px;
+           line-height: 30px;
+           font-weight: 400;
+           background-color: #87b448;
+           cursor: pointer;
+       }
+   }
+.support-main-header-text {
+    
+    margin-top: 90px;
+    text-align: center;
+    &_title {
+        text-align: center;
+        color: #f3f4f6;
+        font-family: 'MyriadProRegular', sans-serif;
+        font-weight: 100;
+        font-size: 48px;
+        letter-spacing: 0.8px;
+    }
+    &_descr {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+        font-family: 'MyriadProRegular', sans-serif;
+        line-height: 30px;
+        color: #f3f4f6;
+        letter-spacing: 1px;
+
+    }
+}
+.support-main {
+    width: 100%;
+    height: 816px;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+
+
+}
+
+.support-main-footer {
+    width: 100%;
+    display: flex;
+    color: #7c8695;
+    padding: 35px 0;
+    justify-content: space-between;
+    font-size: 12px;
+
+    border-top: 1px solid #e0e2e6;
+    &_list {
+        list-style-type: none;
+        display: flex;
+        &-item {
+            margin: 0 15px;
+        }
+    }
+}
+.support-main-form_wrapper {
+    width: 760px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+}
+.support-main-form {
+   width: 100%;
+    border: 1px solid #e0e2e6;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px 20px;
+    &_title {
+        color: #c1c1c1;
+        font-weight: 100;
+        font-size: 16px;
+        font-family: @headFont;
+        padding-bottom: 5px;
+    }
+    &_name {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        &-col {
+            width: 47%;
+        }
+    }
+}
+.support-main-form_input {
+    width: 100%;
+    border: 1px solid #c8cdd5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 52px;
+    font-size: 16px;
+    padding: 20px;
+    margin: 14px 0; 
+    &::-webkit-input-placeholder {color:#7c8695; font-family: @headFont;}
+    &::-moz-placeholder          {color:#7c8695; font-family: @headFont;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#7c8695; font-family: @headFont;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#7c8695; font-family: @headFont;}
+}
+.support-main-form_textarea {
+    border: 1px solid #c8cdd5;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 20px;
+    margin: 10px 0; 
+    width: 720px;
+    height: 152px;
+    resize: none;
+}
+.hextaera-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #1c2534;
+    font-family: @headFont;
+}
+
+.support-main-form-btn {
+    margin: 20px 0;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: #87b448;
+    border-radius: 5px;
+    height: 52px;
+    color: #ffffff;
+    font-family: @headFont;
+
+}
+.support-main-form_select {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    border: 1px solid #c8cdd5;
+    background: url('../img/arrow.svg') no-repeat right;
+    background-size: 25px;
+    background-position-x: 98%;
+    border-radius: 5px;
+    height: 52px;
+    font-size: 16px;
+    margin: 4px 0; 
+}
+.support-main-form_select select {
+    background: transparent;
+    height: 52px;
+    width: 100%;
+    border: none;
+    -webkit-appearance: none;
+    padding: 5px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #7c8695;
+    font-family: @headFont;
+}
+.container-file-upload {
+    display: flex;
+}
+.item {
+    display: flex;
+    width: 150px;
+    list-style-type: none;
+    height: 150px;
+    margin: 0 50px;
+}
+.img-wrap {
+    width: 150px;
+    height: 150px;
+}
+.img-wrap img {
+    width: 100%;
+    max-height: 150px;
+}
+.file-upload {
+    position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+    overflow: hidden; /* Все что выходит за пределы — скрываем */
+    width: 150px; /* Задаем ширину кнопки выбора файла */
+    height: 150px; /* Задаем высоту кнопки выбора файла */
+    border: 1px solid #c8cdd5;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    padding: 8px 4px;
+    color: #fff;
+    text-align: center;
+}
+.file-upload_title {
+    color: #7c8695;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: @headFont;
+    display: block;
+    margin-top: 20%;
+}
+.file-upload_text {
+    font-size: 14px;
+    color: #c2c2c4;
+    font-family: @headFont;
+    display: block;
+    text-align: center;
+    width: 80%;
+    line-height: 27px;
+    margin: 0 auto;
+}
+.file-upload:hover {
+    background: #7aad55;
+}
+.file-upload #addImages{
+   display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+    /* Растягиваем label на всю возможную площадь блока .file-upload */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.file-upload span {
+    line-height: 24px; 
+}
+.support-main-descr {
+    padding: 90px 0;
+    text-align: center;
+    &_title {
+        color: #1c2534;
+       font-size: 30px;
+       font-weight: 300;
+       font-family: @headFont;
+    }
+    &_text {
+        display: flex;
+        justify-content: space-between;
+        margin:40px 0;
+        &-col {
+            width: 47%;
+            text-align: left;
+            color: #7c8695;
+            font-size: 14px;
+            font-weight: 100;
+           
+        }
+    }
+}
+.support-main-form_label, .support-main-form_name-col {
+    font-family: @headFont;
+    color: #1c2534;
+    font-size: 16px;
+}
+.input-other {
+    display: none;
+}
+.name-col_input {
+    margin: 3px 0;
+}
+.input-subject {
+    margin: 3px 0 14px 0;
+}

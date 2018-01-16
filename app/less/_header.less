@@ -1,0 +1,92 @@
+@headFont: 'Proxima Nova Rg', sans-serif;
+@headFontSize: '14px';
+
+.main-header {
+    width: 100%;
+    background-color: #87b448;
+    border-bottom: 2px solid #71973c;
+    height: 67px;
+}
+
+.header-logo {
+    flex: 0 160px;
+    margin-top: 11px;
+    &_img {
+        width: 130px;
+    }
+}
+.header-search {
+    margin-top: 17px;
+    flex: 1;
+    &_input {
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        background-color: #73993d;
+        border-radius: 3px;
+        border: none;
+        padding: 0 20px 0 38px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        background-image: url("../img/search.svg");
+        background-size: 19px;
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        &::-webkit-input-placeholder {color:#ffffff; font-size: 15px; font-weight: 300; letter-spacing: -0.3px;}
+        &::-moz-placeholder          {color:#ffffff; font-size: 15px; font-weight: 300; letter-spacing: -0.3px;}/* Firefox 19+ */
+        &:-moz-placeholder           {color:#ffffff; font-size: 15px; font-weight: 300;letter-spacing: -0.3px;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:#ffffff; font-size: 15px; font-weight: 300;letter-spacing: -0.3px;}
+    }
+}
+.header-login {
+    max-width: 237px;
+    margin-top: 10px;
+    padding-left: 25px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &_avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        margin-right: 11px;
+        cursor: pointer;
+        background: url(../img/image.svg) no-repeat;
+        background-position: -5px -4px;
+        overflow: hidden;
+    }
+    &_title {
+        color: #ffffff;
+        font-family: @headFont;
+        font-size: 16px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+}
+.header-btn {
+    width: 105px;
+    display: flex;
+}
+.btn_list {
+    list-style-type: none;
+    display: flex;
+    margin: 0 28px;
+    margin-top: 21px;
+    &-chat {
+        margin-top: 1px;
+        background: url('../img/chat.svg') no-repeat;
+        background-size: contain;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+    }
+    &-comment {
+        background: url('../img/notifications.svg') no-repeat;
+        background-size: contain;
+        width: 27px;
+        height: 27px; 
+        margin-left: 18px;
+        cursor: pointer;
+    }
+}

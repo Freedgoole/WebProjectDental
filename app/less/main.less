@@ -1,0 +1,89 @@
+@import 'resetcss';
+@import 'fonts';
+@import 'banerAdvertising';
+@import '_errormodal';
+@import '_preloader';
+@import '_header';
+@import '_leftsideBar';
+@import '_rightsideBar';
+@import 'supportIndex';
+
+//основная часть 
+@headFont: 'Proxima Nova Rg',sans-serif;
+.container {
+    display: flex;
+    max-width: 1440px;
+    min-width: 970px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+
+.main-central-block {
+    flex: 1;
+}
+
+.central-block_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0px 8px 11px;
+    &-title {
+        font-family: @headFont;
+        color: #1c2534;
+        font-size: 29px;
+        letter-spacing: -0.3px;
+    }
+    &-btn {
+        margin-top: 5px;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        background-color: #94c54f;
+        font-size: 14px;
+        font-weight: 400;
+        min-width: 122px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 17px;
+        font-family: @headFont;
+        cursor: pointer;
+    }
+}
+
+.container-service {
+    margin: 12px 0px 12px 15px;
+    border: 1px solid #e0e2e6;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.category-card {
+    margin-bottom: 13px;
+    width: 140px;
+    text-align: center;
+    cursor: pointer;
+    margin: 7px;
+    transition: 1s;
+    &:hover &_img {
+        background-color: #f4f7fb;
+    }
+    &:hover &_title {
+        color: #71973c;
+    }
+    &_img {
+        border: 1px solid #e0e2e6;
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    &_title {
+        font-family: @headFont;
+        font-size: 14px;
+        color: #1c2534;
+        line-height: 17px;
+    }
+}
